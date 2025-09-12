@@ -28,7 +28,7 @@ const uint8_t DC = 9; // Define o pino 'DC' do display como 9
 const uint8_t RESET = 8; // Define o pino 'RESET' do display como 8
 
 // Constantes do programa
-const uint8_t LIMITE_DISTANCIA = ; // Define o valor limite de distância para considerar uma presença
+const uint8_t LIMITE_DISTANCIA = 150; // Define o valor limite de distância para considerar uma presença
 
 // Instânciando variáveis
 // Variáveis do HC-SR04 (lado da sala)
@@ -53,38 +53,38 @@ TFT screen = TFT(CS, DC, RESET); // Instância o objeto do display SPI
 // Código executado
 // Executa o bloco de código uma vez no início do programa
 void setup() {
-iniciarDisplay(); // Inicia e prepara o display
+  iniciarDisplay(); // Inicia e prepara o display
 }
 
 // Executa o bloco de código repetidamente após o 'setup()'
 void loop() {
-leituraDosSensores(); // Atualiza o valor das variáveis 'presencaNaSala' e 'presencaNoCorre'
-screen.stroke(255, 255, 255);
-screen.fill(0, 0, 0);
-screen.text(String(contador).c_str(), 130, 10);
-screen.stroke(0, 0, 0);
-screen.fill(0, 0, 0);
-delay(200);
-screen.text(, 110, 10);
-contador += 1;
+// leituraDosSensores(); // Atualiza o valor das variáveis 'presencaNaSala' e 'presencaNoCorre'
+// atualizarDisplay(); // Atualiza o valor da contagem na tela
 }
 
-void iniciarDisplay(){
+void iniciarDisplay() {
   screen.begin(); // Inicia o display
   screen.background(0, 0, 0); // Define a cor do fundo da tela como preto
   screen.stroke(255, 255, 255); // Define a cor do texto e linhas como branco
-  screen.text("Quantidade de alunos na sala: ", 10, 10); // Imprime o texto nas coordenadas (10, 10)
+  screen.text("Quantidade de alunos", 10, 10); // Imprime o texto nas coordenadas (10, 10)
+  screen.text("na sala:", 10, 20); // Imprime o texto nas coordenadas (10, 20)
 }
 
-void leituraDosSensores(){
-  digitalWrite(SENS_SALA_TRIG_PIN, HIGH);
-  digitalWrite(SENS_CORRE_TRIG_PIN, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(SENS_SALA_TRIG_PIN, LOW);
-  digitalWrite(SENS_CORRE_TRIG_PIN, LOW);
-  delayMicroseconds(2);
-  distanciaSala = ultrasonicSala.read(CM);
-  distanciaCorre = ultrasonicCorre.read(CM);
-  resultadoSala = String(distanciaSala);
-  resultadoCorre = String(distanciaCorre);
+// void leituraDosSensores() {
+//   digitalWrite(SENS_SALA_TRIG_PIN, HIGH);
+//   digitalWrite(SENS_CORRE_TRIG_PIN, HIGH);
+//   delayMicroseconds(10);
+//   digitalWrite(SENS_SALA_TRIG_PIN, LOW);
+//   digitalWrite(SENS_CORRE_TRIG_PIN, LOW);
+//   delayMicroseconds(2);
+//   presencaNaSala = ultrasonicSala.read(CM);
+//   presencaNaCorre = ultrasonicCorre.read(CM);
+// }
+
+void atualizarDisplay() {
+  screen.stroke(255, 255, 255); // Define a cor do texto e linhas como branco
+  screen.text(String(contador).c_str(), 60, 20); // Imprime o valor do contador na tela nas coordenadas (60, 20)
+  delay(1000); // Pausa a execução por 1 segundo
+  screen.stroke(0, 0, 0); // Define a cor do texto e linhas como preto
+  screen.text(String(contador).c_str(), 60, 20); // Imprime o valor do contador na tela nas coordenadas (60, 20)
 }

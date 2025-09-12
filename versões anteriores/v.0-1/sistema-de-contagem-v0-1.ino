@@ -1,3 +1,14 @@
+/*
+ * people-counting-system-v0-1.ino
+ *
+ * Algorithm created on August 9, 2025.
+ *
+ * Author: Radrígyla Fonseca (GitHub: radrigyla-fonseca)
+ *
+ * Description: This algorithm counts and prints the number of people in a defined space using ultrasonic sensors.
+ *
+ */
+
 long readUltrasonicDistance(int triggerPin, int echoPin){
   pinMode(triggerPin, OUTPUT);
   digitalWrite(triggerPin, LOW);

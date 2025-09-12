@@ -1,3 +1,14 @@
+/*
+ * people-counting-system-v0-2a.ino
+ *
+ * Algorithm created on September 11, 2025.
+ *
+ * Author: João Henrique (GitHub: joaohgp-dev)
+ *
+ * Description: This algorithm counts and prints on an SPI display the number of people in a defined space using ultrasonic sensors.
+ *
+ */
+
 #include <SPI.h> // Importa a biblioteca SPI
 #include <TFT.h> // Importa a biblioteca TFT
 #include <Ultrasonic.h> // Importa a biblioteca Ultrasonic

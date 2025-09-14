@@ -1,26 +1,27 @@
-# sistema-de-entrada
-Sistema eletrônico digital capaz de detectar a entrada de um aluno na sala de aula, acionando uma sinalização visual (LED) e incrementando um contador, permitindo o acompanhamento visual do número de alunos presentes em tempo real.
+# Sistema de contagem
+Sistema eletrônico digital que detecta entradas e saídas de uma sala, acionando uma sinalização visual LED e atualizando a contagem em um display, permitindo o acompanhamento visual do número de alunos presentes em tempo real.
 
-![Static Badge](https://img.shields.io/badge/versão-0\.0\.2-blue)
-![GitHub issues](https://img.shields.io/github/issues/radrigyla-fonseca/sistema-de-entrada)
-![License](https://img.shields.io/github/license/radrigyla-fonseca/sistema-de-entrada)
+![Static Badge](https://img.shields.io/badge/versão-0\.2b-blue)
+![GitHub issues](https://img.shields.io/github/issues/clube-amperistas/sistema-de-entrada)
+![License](https://img.shields.io/github/license/clube-amperistas/sistema-de-entrada)
 
 ---
 
-## 📚 Sumário
+## Sumário
+- [Problema](#)
 - [Objetivo](#objetivo)
-- [Equipe](#equipe)
-- [Tecnologias e Ferramentas](#tecnologias--ferramentas)
+- [Métodologia](#)
+- [Contribuições](#)
 - [Licença](#licença)
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 Este projeto tem o objetivo de por em prática o conhecimento técnico aprendido em sala de aula em uma usabilidade real do dia a dia, desenvolvendo maior familiaridade com a eletrônica digital.
 
 ---
 
-## 👥 Equipe
+## Equipe
 - [Adrian Gabriel](https://github.com/T4kyo)
 - [Breno Martins do Eirado](https://github.com/BrenoMartinsdoEirado)
 - [João Henrique](https://github.com/joaohgp-dev)
@@ -29,11 +30,11 @@ Este projeto tem o objetivo de por em prática o conhecimento técnico aprendido
 
 ---
 
-## 🔧 Tecnologias | Ferramentas
+## Tecnologias | Ferramentas
 - C++
 - Tinkercad
 
 ---
 
-## 📃 Licença
+## Licença
 Este projeto está sob a licença --.

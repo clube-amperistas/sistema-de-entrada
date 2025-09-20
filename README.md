@@ -17,24 +17,29 @@ Sistema eletrônico digital que detecta entradas e saídas de uma sala, acionand
 ---
 
 ## Objetivo
-Este projeto tem o objetivo de por em prática o conhecimento técnico aprendido em sala de aula em uma usabilidade real do dia a dia, desenvolvendo maior familiaridade com a eletrônica digital.
+Este projeto tem o objetivo de por em prática o conhecimento técnico aprendido em sala de aula em uma usabilidade real do dia a dia, desenvolvendo maior familiaridade com a eletrônica digital no processo de prototipação de sistemas.
 
 ---
 
 ## Equipe
-- [Adrian Gabriel](https://github.com/T4kyo)
-- [Breno Martins do Eirado](https://github.com/BrenoMartinsdoEirado)
-- [João Henrique](https://github.com/joaohgp-dev)
-- [Radrígyla Fonseca](https://github.com/radrigyla-fonseca)
-- [Samuel Levi](https://github.com/samuellevidev)
+<table align="center">
+  <tr>
+    <td align="center"><a href="https://github.com/T4kyo"><img src="https://avatars.githubusercontent.com/u/142987616?v=4" width="150px" alt="Adrian Gabriel"/><br /><sub><b>Adrian Gabriel</b></sub></a></td>
+    <td align="center"><a href="https://github.com/brennoaf"><img src="https://avatars.githubusercontent.com/u/131369370?v=4" width="150px" alt="Brenno França"/><br /><sub><b>Brenno França</b></sub></a></td>
+    <td align="center"><a href="https://github.com/joaohgp-dev"><img src="https://avatars.githubusercontent.com/u/156421880?v=4" width="150px" alt="João Henrique"/><br /><sub><b>João Henrique</b></sub></a></td>
+    <td align="center"><a href="https://github.com/radrigyla-fonseca"><img src="https://avatars.githubusercontent.com/u/144265210?v=4" width="150px" alt="Radrígyla Fonseca"/><br /><sub><b>Radrígyla Fonseca</b></sub></a></td>
+    <td align="center"><a href="https://github.com/samuellevidev"><img src="https://avatars.githubusercontent.com/u/113398240?v=4" width="150px" alt="Samuel Levi"/><br /><sub><b>Samuel Levi</b></sub></a></td>
+  </tr>
+</table>
 
 ---
 
 ## Tecnologias | Ferramentas
 - C++
+- Arduino Ide
 - Tinkercad
 
 ---
 
 ## Licença
-Este projeto está sob a licença --.
+Este projeto está sob a licença [MIT](https://github.com/clube-amperistas/sistema-de-entrada/blob/main/LICENSE).
